@@ -8,7 +8,7 @@ wget -q -O /usr/bin/bug "https://raw.githubusercontent.com/aggvpn/allow/main/vbu
 ```
 ## UPDATE SCRIPT WSS
 ```
-rm -f /usr/bin/on && wget -q -O /usr/bin/bug "https://raw.githubusercontent.com/aggvpn/allow/main/vbug.sh" && chmod +x /usr/bin/bug
+rm -f /usr/bin/bug && wget -q -O /usr/bin/bug "https://raw.githubusercontent.com/aggvpn/allow/main/vbug.sh" && chmod +x /usr/bin/bug
 ```
 
 ____________________________
