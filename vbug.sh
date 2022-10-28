@@ -464,7 +464,7 @@ clear
 echo -e ""
 echo -e "   \033[4;31m══════════════════════════════════════════\033[0m"
 figlet VlessWss | lolcat
-echo -e                                                  "بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيم"
+echo -e " jievpn"
 echo -e "   \033[4;31m══════════════════════════════════════════\033[0m"
 echo -e "   \e[$back_text  \e[$box   MENU VLESS WS ALL TRICK               \e[m"
 echo -e "   \e[$line══════════════════════════════════════════\e[m"
