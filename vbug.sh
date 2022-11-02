@@ -101,7 +101,7 @@ vlesslink3="vless://${uuid}@onlinepayment.celcom.com.my:443?security=tls&encrypt
 vlesslink4="vless://${uuid}@tv.iqiyi.site:8080?security=none&encryption=none&type=ws&headerType=none&path=/xray-vlessws-none-tls&host=${domain}#${user}"
 vlesslink5="vless://${uuid}@m.pokemon.com.${domain}:443?security=tls&encryption=none&type=ws&headerType=none&path=/xray-vlessws-tls&sni=m.pokemon.com&host=m.pokemon.com#${user}"
 vlesslink6="vless://${uuid}@cdn.who.int:8080?security=none&encryption=none&type=ws&headerType=none&path=wss://cdn.who.int/xray-vlessws-none-tls&host=${domain}#${user}"
-vlesslink7="vless://${uuid}@${sts}${IPVPS}:443?security=tls&encryption=none&type=ws&headerType=none&path=/xray-vlessws-tls=ulist.com.my&host=ulist.com.my#${user}"
+vlesslink7="vless://${uuid}@${sts}${MYIP}:443?security=tls&encryption=none&type=ws&headerType=none&path=/xray-vlessws-tls=ulist.com.my&host=ulist.com.my#${user}"
 vlesslink8="vless://${uuid}@esports.pubgmobile.com.${domain}:443?security=tls&encryption=none&type=ws&headerType=none&path=/xray-vlessws-tls&sni=esports.pubgmobile.com&host=esports.pubgmobile.com#${user}"
 systemctl restart xray
 systemctl restart xray@none
@@ -192,7 +192,7 @@ vlesslink3="vless://${uuid}@onlinepayment.celcom.com.my:443?security=tls&encrypt
 vlesslink4="vless://${uuid}@tv.iqiyi.site:8080?security=none&encryption=none&type=ws&headerType=none&path=/xray-vlessws-none-tls&host=${domain}#${user}"
 vlesslink5="vless://${uuid}@m.pokemon.com.${domain}:443?security=tls&encryption=none&type=ws&headerType=none&path=/xray-vlessws-tls&sni=m.pokemon.com&host=m.pokemon.com#${user}"
 vlesslink6="vless://${uuid}@cdn.who.int:8080?security=none&encryption=none&type=ws&headerType=none&path=wss://cdn.who.int/xray-vlessws-none-tls&host=${domain}#${user}"
-vlesslink7="vless://${uuid}@${sts}${IPVPS}:443?security=tls&encryption=none&type=ws&headerType=none&path=/xray-vlessws-tls=ulist.com.my&host=ulist.com.my#${user}"
+vlesslink7="vless://${uuid}@${sts}${MYIP}:443?security=tls&encryption=none&type=ws&headerType=none&path=/xray-vlessws-tls=ulist.com.my&host=ulist.com.my#${user}"
 vlesslink8="vless://${uuid}@esports.pubgmobile.com.${domain}:443?security=tls&encryption=none&type=ws&headerType=none&path=/xray-vlessws-tls&sni=esports.pubgmobile.com&host=esports.pubgmobile.com#${user}"
 systemctl restart xray
 systemctl restart xray@none
@@ -369,7 +369,7 @@ vlesslink3="vless://${uuid}@onlinepayment.celcom.com.my:443?security=tls&encrypt
 vlesslink4="vless://${uuid}@tv.iqiyi.site:8080?security=none&encryption=none&type=ws&headerType=none&path=/xray-vlessws-none-tls&host=${domain}#${user}"
 vlesslink5="vless://${uuid}@m.pokemon.com.${domain}:443?security=tls&encryption=none&type=ws&headerType=none&path=/xray-vlessws-tls&sni=m.pokemon.com&host=m.pokemon.com#${user}"
 vlesslink6="vless://${uuid}@cdn.who.int:8080?security=none&encryption=none&type=ws&headerType=none&path=wss://cdn.who.int/xray-vlessws-none-tls&host=${domain}#${user}"
-vlesslink7="vless://${uuid}@${sts}${IPVPS}:443?security=tls&encryption=none&type=ws&headerType=none&path=/xray-vlessws-tls=ulist.com.my&host=ulist.com.my#${user}"
+vlesslink7="vless://${uuid}@${sts}${MYIP}:443?security=tls&encryption=none&type=ws&headerType=none&path=/xray-vlessws-tls=ulist.com.my&host=ulist.com.my#${user}"
 vlesslink8="vless://${uuid}@esports.pubgmobile.com.${domain}:443?security=tls&encryption=none&type=ws&headerType=none&path=/xray-vlessws-tls&sni=esports.pubgmobile.com&host=esports.pubgmobile.com#${user}"
 clear
 echo -e ""
