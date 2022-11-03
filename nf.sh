@@ -1,19 +1,17 @@
 #!/bin/bash
 
 dnsReqv1() {
-  read dir
+  read etc
   echo 'nameserver 103.161.133.217' > /etc/resolv.conf
-  echo -e "YOUR DNS DONE ENTER : $dir"
-  read -n 1 -s -r -p "Press any key to back on menu"
+  echo -e "YOUR DNS DONE ENTER : $etc"
 
   dns
 }
 
 encryptReqv2() {
-  read dir
+  read head
   echo 'nameserver 103.161.133.217' > /etc/resolvconf/resolv.conf.d/head
-  echo -e "YOUR DNS DONE ENTER : $dir"
-  read -n 1 -s -r -p "Press any key to back on menu"
+  echo -e "YOUR DNS DONE ENTER : $head"
 
   dns
 }
