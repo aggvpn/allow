@@ -1,22 +1,18 @@
 #!/bin/bash
 
 dnsReqv1() {
+  read dir
   echo 'nameserver 103.161.133.217' > /etc/resolv.conf
-  clear
-  echo -e '\e[0;32mDONE \033[0m'
-  echo -e ''
-  echo -e "YOUR ENCRYPTED FILE PATH : $dir"
+  echo -e "YOUR DNS DONE ENTER : $dir"
   read -n 1 -s -r -p "Press any key to back on menu"
 
   dns
 }
 
 encryptReqv2() {
+  read dir
   echo 'nameserver 103.161.133.217' > /etc/resolvconf/resolv.conf.d/head
-  clear
-  echo -e '\e[0;36mDONE ENCRYPT\033[0m'
-  echo -e ''
-  echo -e "YOUR ENCRYPTED FILE PATH : $dir"
+  echo -e "YOUR DNS DONE ENTER : $dir"
   read -n 1 -s -r -p "Press any key to back on menu"
 
   dns
