@@ -76,8 +76,8 @@ until [[ $user =~ ^[a-zA-Z0-9_]+$ && ${CLIENT_EXISTS} == '0' ]]; do
 			exit 1
 		fi
 	done
-patchtls=/xray-vmessws-tls
-patchnontls=/xray-vmessws-none-tls
+patchtls=/jie-vmessws-tls
+patchnontls=/jie-vmessws-none-tls
 uuid=$(cat /proc/sys/kernel/random/uuid)
 read -p "   Bug Address (Example: www.google.com) : " address
 read -p "   Bug SNI/Host (Example : m.facebook.com) : " sni
@@ -244,8 +244,8 @@ exp=$(date -d "$masaaktif days" +"%Y-%m-%d")
 # Make Random Username 
 user=Trial`</dev/urandom tr -dc X-Z0-9 | head -c4`
 
-patchtls=/xray-vmessws-tls
-patchnontls=/xray-vmessws-none-tls
+patchtls=/jie-vmessws-tls
+patchnontls=/jie-vmessws-none-tls
 uuid=$(cat /proc/sys/kernel/random/uuid)
 read -p "   Bug Address (Example: www.google.com) : " address
 read -p "   Bug SNI/Host (Example : m.facebook.com) : " sni
@@ -511,8 +511,8 @@ NUMBER_OF_CLIENTS=$(grep -c -E "^#vms " "/usr/local/etc/xray/config.json")
 			read -rp "Select one client [1-${NUMBER_OF_CLIENTS}]: " CLIENT_NUMBER
 		fi
 	done
-patchtls=/xray-vmessws-tls
-patchnontls=/xray-vmessws-none-tls
+patchtls=/jie-vmessws-tls
+patchnontls=/jie-vmessws-none-tls
 user=$(grep -E "^#vms " "/usr/local/etc/xray/config.json" | cut -d ' ' -f 2 | sed -n "${CLIENT_NUMBER}"p)
 harini=$(grep -E "^#vms " "/usr/local/etc/xray/config.json" | cut -d ' ' -f 4 | sed -n "${CLIENT_NUMBER}"p)
 exp=$(grep -E "^#vms " "/usr/local/etc/xray/config.json" | cut -d ' ' -f 3 | sed -n "${CLIENT_NUMBER}"p)
