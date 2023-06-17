@@ -1,6 +1,6 @@
 #!/bin/bash
 #wget https://github.com/${GitUser}/
-GitUser="aziziangah92"
+GitUser="aggvpn"
 #IZIN SCRIPT
 MYIP=$(curl -sS ipv4.icanhazip.com)
 echo -e "\e[32mloading...\e[0m"
@@ -95,7 +95,7 @@ sed -i '/#xray-vmess-tls$/a\#vms '"$user $exp $harini $uuid"'\
 },{"id": "'""$uuid""'","alterId": '"0"',"email": "'""$user""'"' /usr/local/etc/xray/config.json
 sed -i '/#xray-vmess-nontls$/a\#vms '"$user $exp $harini $uuid"'\
 },{"id": "'""$uuid""'","alterId": '"0"',"email": "'""$user""'"' /usr/local/etc/xray/none.json
-cat>/usr/local/etc/xray/$user-yes.json<<EOF
+cat>/usr/local/etc/xray/$user-none.json<<EOF
       {
       "v": "2",
       "ps": "${user}",
@@ -110,7 +110,7 @@ cat>/usr/local/etc/xray/$user-yes.json<<EOF
       "tls": "none"
 }
 EOF
-cat>/usr/local/etc/xray/$user-digibooster.json<<EOF
+cat>/usr/local/etc/xray/$user-none.json<<EOF
       {
       "v": "2",
       "ps": "${user}",
@@ -125,7 +125,7 @@ cat>/usr/local/etc/xray/$user-digibooster.json<<EOF
       "tls": "none"
 }
 EOF
-cat>/usr/local/etc/xray/$user-allbypas.json<<EOF
+cat>/usr/local/etc/xray/$user-none.json<<EOF
       {
       "v": "2",
       "ps": "${user}",
@@ -140,7 +140,7 @@ cat>/usr/local/etc/xray/$user-allbypas.json<<EOF
       "tls": "none"
 }
 EOF
-cat>/usr/local/etc/xray/$user-digiapn.json<<EOF
+cat>/usr/local/etc/xray/$user-none.json<<EOF
       {
       "v": "2",
       "ps": "${user}",
@@ -155,7 +155,7 @@ cat>/usr/local/etc/xray/$user-digiapn.json<<EOF
       "tls": "none"
 }
 EOF
-cat>/usr/local/etc/xray/$user-umo.json<<EOF
+cat>/usr/local/etc/xray/$user-tls.json<<EOF
       {
       "v": "2",
       "ps": "${user}",
@@ -176,11 +176,11 @@ vmess_base642=$( base64 -w 0 <<< $vmess_json2)
 vmess_base643=$( base64 -w 0 <<< $vmess_json3)
 vmess_base644=$( base64 -w 0 <<< $vmess_json4)
 vmess_base645=$( base64 -w 0 <<< $vmess_json5)
-vmesslink1="vmess://$(base64 -w 0 /usr/local/etc/xray/$user-yes.json)"
-vmesslink2="vmess://$(base64 -w 0 /usr/local/etc/xray/$user-digibooster.json)"
-vmesslink3="vmess://$(base64 -w 0 /usr/local/etc/xray/$user-allbypas.json)"
-vmesslink4="vmess://$(base64 -w 0 /usr/local/etc/xray/$user-digiapn.json)"
-vmesslink5="vmess://$(base64 -w 0 /usr/local/etc/xray/$user-umo.json)"
+vmesslink1="vmess://$(base64 -w 0 /usr/local/etc/xray/$user-none.json)"
+vmesslink2="vmess://$(base64 -w 0 /usr/local/etc/xray/$user-none.json)"
+vmesslink3="vmess://$(base64 -w 0 /usr/local/etc/xray/$user-none.json)"
+vmesslink4="vmess://$(base64 -w 0 /usr/local/etc/xray/$user-none.json)"
+vmesslink5="vmess://$(base64 -w 0 /usr/local/etc/xray/$user-tls.json)"
 systemctl restart xray@vmess
 systemctl restart xray@vmessnone
 service cron restart
