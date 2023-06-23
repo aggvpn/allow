@@ -95,7 +95,7 @@ sed -i '/#xray-vmess-tls$/a\#vms '"$user $exp $harini $uuid"'\
 },{"id": "'""$uuid""'","alterId": '"0"',"email": "'""$user""'"' /usr/local/etc/xray/config.json
 sed -i '/#xray-vmess-nontls$/a\#vms '"$user $exp $harini $uuid"'\
 },{"id": "'""$uuid""'","alterId": '"0"',"email": "'""$user""'"' /usr/local/etc/xray/none.json
-cat>/usr/local/etc/xray/$user-none.json<<EOF
+cat>/usr/local/etc/xray/$user-yes.json<<EOF
       {
       "v": "2",
       "ps": "${user}",
@@ -110,7 +110,7 @@ cat>/usr/local/etc/xray/$user-none.json<<EOF
       "tls": "none"
 }
 EOF
-cat>/usr/local/etc/xray/$user-none.json<<EOF
+cat>/usr/local/etc/xray/$user-digiboost.json<<EOF
       {
       "v": "2",
       "ps": "${user}",
@@ -125,7 +125,7 @@ cat>/usr/local/etc/xray/$user-none.json<<EOF
       "tls": "none"
 }
 EOF
-cat>/usr/local/etc/xray/$user-none.json<<EOF
+cat>/usr/local/etc/xray/$user-bypass.json<<EOF
       {
       "v": "2",
       "ps": "${user}",
@@ -140,7 +140,7 @@ cat>/usr/local/etc/xray/$user-none.json<<EOF
       "tls": "none"
 }
 EOF
-cat>/usr/local/etc/xray/$user-none.json<<EOF
+cat>/usr/local/etc/xray/$user-digi.json<<EOF
       {
       "v": "2",
       "ps": "${user}",
@@ -176,10 +176,10 @@ vmess_base642=$( base64 -w 0 <<< $vmess_json2)
 vmess_base643=$( base64 -w 0 <<< $vmess_json3)
 vmess_base644=$( base64 -w 0 <<< $vmess_json4)
 vmess_base645=$( base64 -w 0 <<< $vmess_json5)
-vmesslink1="vmess://$(base64 -w 0 /usr/local/etc/xray/$user-none.json)"
-vmesslink2="vmess://$(base64 -w 0 /usr/local/etc/xray/$user-none.json)"
-vmesslink3="vmess://$(base64 -w 0 /usr/local/etc/xray/$user-none.json)"
-vmesslink4="vmess://$(base64 -w 0 /usr/local/etc/xray/$user-none.json)"
+vmesslink1="vmess://$(base64 -w 0 /usr/local/etc/xray/$user-yes.json)"
+vmesslink2="vmess://$(base64 -w 0 /usr/local/etc/xray/$user-digiboost.json)"
+vmesslink3="vmess://$(base64 -w 0 /usr/local/etc/xray/$user-bypas.json)"
+vmesslink4="vmess://$(base64 -w 0 /usr/local/etc/xray/$user-digi.json)"
 vmesslink5="vmess://$(base64 -w 0 /usr/local/etc/xray/$user-tls.json)"
 systemctl restart xray@vmess
 systemctl restart xray@vmessnone
