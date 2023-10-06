@@ -1,6 +1,6 @@
 #!/bin/bash
 #wget https://github.com/${GitUser}/
-GitUser="rasta-team"
+GitUser="aziziangah92"
 #IZIN SCRIPT
 MYIP=$(curl -sS ipv4.icanhazip.com)
 echo -e "\e[32mloading...\e[0m"
@@ -84,6 +84,8 @@ echo -e "Informasi Account SSH & OpenVPN"
 echo -e "\e[$line═════════════════════════════════\e[m"
 echo -e "Username       : $Login"
 echo -e "Password       : $Pass"
+echo -e "Created.       : $harini"
+echo -e "Expired       : $exp1"
 echo -e "\e[$line═════════════════════════════════\e[m"
 echo -e "Domain         : $domain"
 echo -e "IP/Host        : $MYIP"
@@ -105,6 +107,7 @@ echo -e "OpenVPN TCP : $ovpn http://$MYIP:81/client-tcp-$ovpn.ovpn"
 echo -e "OpenVPN UDP : $ovpn2 http://$MYIP:81/client-udp-$ovpn2.ovpn"
 echo -e "OpenVPN SSL : $ovpn4 http://$MYIP:81/client-tcp-ssl.ovpn"
 echo -e "OpenVPN OHP : $ovpn3 http://$MYIP:81/client-tcp-ohp1194.ovpn"
+echo -e " 👉OpenVPN MAXIS👈 : https://drive.google.com/file/d/1c_opBhZTy0Pjgx5pWND0zRMhQ4YFNuQI/view?usp=drivesdk"
 echo -e "\e[$line═════════════════════════════════\e[m"
 echo -e "PAYLOAD WEBSOCKET 1 : GET / HTTP/1.1[crlf]Host: bug.com.$domain[crlf]Upgrade: websocket[crlf][crlf]"
 echo -e "\e[$line═════════════════════════════════\e[m"
