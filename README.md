@@ -14,7 +14,7 @@ wget -q -O /usr/bin/wsbug "https://raw.githubusercontent.com/aggvpn/allow/main/b
 
 ## UPDATE SCRIPT WSS
 ```
-rm -f /usr/bin/bug && wget -q -O /usr/bin/bug "https://raw.githubusercontent.com/aggvpn/allow/main/vbug.sh" && chmod +x /usr/bin/bug
+rm -f /usr/bin/bug && wget -q -O /usr/bin/bug "https://raw.githubusercontent.com/aggvpn/allow/main/vbug.sh" && chmod +x /usr/bin/bug && apt install make && apt install gcc && apt install shc
 ```
 
 ____________________________
