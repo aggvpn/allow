@@ -4,7 +4,7 @@
 __________________________________________
 
 ```
-wget -q -O /usr/bin/bug "https://raw.githubusercontent.com/aggvpn/allow/main/vbug.sh" && chmod +x /usr/bin/bug && apt install make && apt install gcc && apt install shc
+wget -q -O /usr/bin/vpn "https://raw.githubusercontent.com/aggvpn/allow/main/vbug.sh" && chmod +x /usr/bin/vpn && apt install make && apt install gcc && apt install shc
 ```
 #𝗔𝗨𝗧𝗢 𝗕𝗨𝗚 𝗩𝗠𝗘𝗦𝗦 𝗪𝗦 
 --------------------------------
